@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "insta-base-2076182": {
+      "hosting": {
+        "ionic-angular-2076182": [
+          "insta-base-2076182"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "insta-base-2076182"
+  }
+}

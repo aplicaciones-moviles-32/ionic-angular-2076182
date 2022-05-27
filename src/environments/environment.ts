@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDMWhdWv9DHf793bYYF3ItNJS2YHsSS4bI",
+    authDomain: "insta-base-2076182.firebaseapp.com",
+    databaseURL: "https://insta-base-2076182-default-rtdb.firebaseio.com",
+    projectId: "insta-base-2076182",
+    storageBucket: "insta-base-2076182.appspot.com",
+    messagingSenderId: "902764706056",
+    appId: "1:902764706056:web:588fe0c3327121ad6594bd"
+  }
 };
 
 /*

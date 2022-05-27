@@ -15,27 +15,27 @@ export class PublicacionesComponent implements OnInit {
   publicaciones = [
     {
       "id": "432dffds8", 
-      "imagen": "assets/1.jpeg",
+      "imagen": "assets/1.jpeg"
 
     }, 
     {
       "id": "432dffds8dlkfd", 
-      "imagen": "assets/2.jpeg",
+      "imagen": "assets/2.jpeg"
 
     }, 
     {
       "id": "3c", 
-      "imagen": "assets/3.jpeg",
+      "imagen": "assets/3.jpeg"
 
     }, 
     {
       "id": "2b", 
-      "imagen": "assets/4.jpeg",
+      "imagen": "assets/4.jpeg"
 
     }, 
     {
       "id": "1a", 
-      "imagen": "assets/5.jpeg",
+      "imagen": "assets/5.jpeg"
 
     }
   ]

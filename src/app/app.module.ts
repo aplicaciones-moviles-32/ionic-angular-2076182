@@ -17,6 +17,8 @@ import { PublicacionComponent } from './publicacion/publicacion.component';
 import { FormsModule } from '@angular/forms';
 import { RoutesModule } from './routes.module';
 
+import { environment } from 'src/environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +33,7 @@ import { RoutesModule } from './routes.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     IonicModule.forRoot(),
     RoutesModule
   ],

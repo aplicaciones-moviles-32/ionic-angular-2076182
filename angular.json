@@ -165,6 +165,16 @@
               "browserTarget": "ionic-angular-2076182:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "ionic-angular-2076182:build:production",
+            "firebaseProject": "insta-base-2076182",
+            "firebaseHostingSite": "insta-base-2076182"
+          }
         }
       }
     }
