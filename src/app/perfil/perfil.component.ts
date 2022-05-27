@@ -14,13 +14,13 @@ export class PerfilComponent implements OnInit {
   }
 
   usuario = {
-    "nombre": "Ruffles", 
-    "usuario": "@ruffles", 
-    "descripcion": "Guau", 
+    "nombre": "SrBigotes", 
+    "usuario": "@SrBigotes", 
+    "descripcion": "miau", 
     "followers": 34324, 
-    "following": 2, 
+    "following": 1, 
     "posts": 123 ,
-    "fotodeperfil": "assets/ZXHWLZPS4AJUEXDFDGRTCN3RMQ.jpeg"
+    "fotodeperfil": "assets/gatos11.jpeg"
   }
 
   editando = false;

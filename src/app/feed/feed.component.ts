@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
@@ -14,14 +15,14 @@ export class FeedComponent implements OnInit {
 
   perrillos = [
     {
-      "usuario": "@SrBigotes",
-      "src": "assets/gatito.jpeg",
-      "caption": "Un gatito"
+      "usuario": "@SrQuesadiila",
+      "src": "assets/descarga.jpeg",
+      "caption": "Kiubo qu hace...."
     },
     {
-      "usuario": "@SrGorro",
+      "usuario": "@SrTostadora",
       "src": "assets/gates.jpeg",
-      "caption": "Que hace.."
+      "caption": "holaaaaaa"
     },
   ]
 

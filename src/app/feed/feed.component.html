@@ -1,16 +1,18 @@
-
+<ion-content>
     <ion-grid>
         <ion-row *ngFor="let perrillo of perrillos">
             <ion-col>
                 <ion-card>
                     <ion-card-header>
-                        {{perrillo.usuario}}
+                        <strong [routerLink]="['/post',perrillo.usuario]"> {{perrillo.usuario}}</strong>
                     </ion-card-header>
                     <ion-card-content>
-                        <img src="{{perrillo.src}}" alt="">
+                        <img src="{{perrillo.src}}" alt="" [routerLink]="['/post',perrillo.usuario]">
                         <p class="caption">{{perrillo.caption}}</p>
                     </ion-card-content>
                 </ion-card>
             </ion-col>
         </ion-row>
     </ion-grid>
+
+</ion-content>

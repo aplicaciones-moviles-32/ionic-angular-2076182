@@ -6,17 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ionic-angular-1FM045';
+  title = 'Insta';
   total= 90;
 
   esCierto = true;
 
   imagenes = [
-    "assets/perrillo.jpeg",
-    "assets/perrillo.jpeg",
-    "assets/perrillo.jpeg",
-    "assets/perrillo.jpeg",
-    "assets/perrillo.jpeg"
+    "assets/1.jpeg",
+    "assets/2.jpeg",
+    "assets/3.jpeg",
+    "assets/4.jpeg",
+    "assets/5.jpeg"
   ];
 
   perfil = true;
