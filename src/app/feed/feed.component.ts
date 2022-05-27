@@ -12,4 +12,17 @@ export class FeedComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  perrillos = [
+    {
+      "usuario": "@SrBigotes",
+      "src": "assets/gatito.jpeg",
+      "caption": "Un gatito"
+    },
+    {
+      "usuario": "@SrGorro",
+      "src": "assets/gates.jpeg",
+      "caption": "Que hace.."
+    },
+  ]
+
 }
