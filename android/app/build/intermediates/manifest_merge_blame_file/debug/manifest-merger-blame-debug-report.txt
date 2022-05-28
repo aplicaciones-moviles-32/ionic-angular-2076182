@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:40:5-67
+13-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:40:22-64
+14
+15    <queries>
+15-->[:capacitor-camera] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/node_modules/@capacitor/camera/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:15
+16        <intent>
+16-->[:capacitor-camera] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/node_modules/@capacitor/camera/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+17            <action android:name="android.media.action.IMAGE_CAPTURE" />
+17-->[:capacitor-camera] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/node_modules/@capacitor/camera/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-73
+17-->[:capacitor-camera] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/node_modules/@capacitor/camera/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-70
+18        </intent>
+19        <intent>
+19-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:18
+20            <action android:name="android.intent.action.GET_CONTENT" />
+20-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-72
+20-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:21-69
+21        </intent>
+22        <intent>
+22-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:18
+23            <action android:name="android.intent.action.PICK" />
+23-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-65
+23-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:21-62
+24        </intent>
+25        <intent>
+25-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-28:18
+26            <action android:name="com.android.camera.action.CROP" />
+26-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-69
+26-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:21-66
+27
+28            <data
+28-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-27:44
+29                android:mimeType="image/*"
+29-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-43
+30                android:scheme="content" />
+30-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-41
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.VIBRATE" />
+34-->[:capacitor-haptics] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/node_modules/@capacitor/haptics/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-66
+34-->[:capacitor-haptics] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/node_modules/@capacitor/haptics/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-63
+35    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+35-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-81
+35-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-78
+36
+37    <application
+37-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:5:5-36:19
+38        android:allowBackup="true"
+38-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:6:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.6.0] /Users/ricardo/.gradle/caches/transforms-3/08363280b83a89b9d0956e0fe17ede3b/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+41        android:icon="@mipmap/ic_launcher"
+41-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:7:9-43
+42        android:label="@string/app_name"
+42-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:8:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:9:9-54
+44        android:supportsRtl="true"
+44-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:10:9-35
+45        android:theme="@style/AppTheme" >
+45-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:11:9-40
+46        <activity
+46-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:13:9-25:20
+47            android:name="com.example.app.MainActivity"
+47-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:15:13-56
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+48-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:14:13-129
+49            android:label="@string/title_activity_main"
+49-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:16:13-56
+50            android:launchMode="singleTask"
+50-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:18:13-44
+51            android:theme="@style/AppTheme.NoActionBarLaunch" >
+51-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:17:13-62
+52            <intent-filter>
+52-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:20:13-23:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:21:17-69
+53-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:21:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:22:17-77
+55-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:22:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <provider
+60            android:name="androidx.core.content.FileProvider"
+60-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:28:13-62
+61            android:authorities="com.example.app.fileprovider"
+61-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:29:13-64
+62            android:exported="false"
+62-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:30:13-37
+63            android:grantUriPermissions="true" >
+63-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:31:13-47
+64            <meta-data
+64-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:32:13-34:64
+65                android:name="android.support.FILE_PROVIDER_PATHS"
+65-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:33:17-67
+66                android:resource="@xml/file_paths" />
+66-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:34:17-51
+67        </provider>
+68        <provider
+68-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-40:20
+69            android:name="org.apache.cordova.camera.FileProvider"
+69-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-66
+70            android:authorities="com.example.app.cordova.plugin.camera.provider"
+70-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-82
+71            android:exported="false"
+71-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-37
+72            android:grantUriPermissions="true" >
+72-->[:capacitor-cordova-android-plugins] /Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/capacitor-cordova-android-plugins/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-47
+73            <meta-data
+73-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:32:13-34:64
+74                android:name="android.support.FILE_PROVIDER_PATHS"
+74-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:33:17-67
+75                android:resource="@xml/camera_provider_paths" />
+75-->/Users/ricardo/Desktop/Aplicaciones/Aplicaciones-Moviles/ionic-angular-2076182/android/app/src/main/AndroidManifest.xml:34:17-51
+76        </provider>
+77    </application>
+78
+79</manifest>
