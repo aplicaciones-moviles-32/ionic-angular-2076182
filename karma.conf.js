@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/ionic-angular-2076182'),
+      dir: require('path').join(__dirname, './coverage/angular-basico'),
       subdir: '.',
       reporters: [
         { type: 'html' },

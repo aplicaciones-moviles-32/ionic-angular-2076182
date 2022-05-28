@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ionic-angular-2076182": {
+    "angular-basico": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ionic-angular-2076182",
+            "outputPath": "dist/angular-basico",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,6 +25,11 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              },
               {
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
@@ -106,10 +111,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ionic-angular-2076182:build:production"
+              "browserTarget": "angular-basico:build:production"
             },
             "development": {
-              "browserTarget": "ionic-angular-2076182:build:development"
+              "browserTarget": "angular-basico:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -117,7 +122,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ionic-angular-2076182:build"
+            "browserTarget": "angular-basico:build"
           }
         },
         "test": {
@@ -134,6 +139,11 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
+              },
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
               }
             ],
             "styles": [
@@ -145,39 +155,29 @@
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "ionic-angular-2076182:ionic-cordova-build",
-            "devServerTarget": "ionic-angular-2076182:serve"
+            "cordovaBuildTarget": "angular-basico:ionic-cordova-build",
+            "devServerTarget": "angular-basico:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "ionic-angular-2076182:ionic-cordova-build:production",
-              "devServerTarget": "ionic-angular-2076182:serve:production"
+              "cordovaBuildTarget": "angular-basico:ionic-cordova-build:production",
+              "devServerTarget": "angular-basico:serve:production"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "ionic-angular-2076182:build"
+            "browserTarget": "angular-basico:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ionic-angular-2076182:build:production"
+              "browserTarget": "angular-basico:build:production"
             }
-          }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {
-            "prerender": false,
-            "ssr": false,
-            "browserTarget": "ionic-angular-2076182:build:production",
-            "firebaseProject": "insta-base-2076182",
-            "firebaseHostingSite": "insta-base-2076182"
           }
         }
       }
     }
   },
-  "defaultProject": "ionic-angular-2076182"
+  "defaultProject": "angular-basico"
 }

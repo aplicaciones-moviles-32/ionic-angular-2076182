@@ -1,30 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FirebaseDbService } from './firebase-db.service';
+
 
 @Component({
-  selector: 'app-raiz',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Insta';
-  total= 90;
+export class AppComponent implements OnInit{
+  
 
-  esCierto = true;
+  constructor(private fb: FirebaseDbService){}
 
-  imagenes = [
-    "assets/1.jpeg",
-    "assets/2.jpeg",
-    "assets/3.jpeg",
-    "assets/4.jpeg",
-    "assets/5.jpeg"
-  ];
+  ngOnInit(): void {
+    this.getUsuario().subscribe(res => {
+      this.usuario = res.toString();
+      
+    })
 
-  perfil = true;
-
-  togglePerfil(): void {
-    this.perfil = !this.perfil;
+    this.getFotoPerfil().subscribe(res => {
+      this.fotoPerfil = res.toString();
+    })
+    
   }
 
+  usuario : string = '';
+  fotoPerfil: string = '';
 
-  
+  getUsuario() {
+    return this.fb.getUsuario()
+  }
+
+  getFotoPerfil() {
+    return this.fb.getFotoPerfil();
+  }
+
+  cerrarSesion() {
+    //Work In Progress
+  }
 }

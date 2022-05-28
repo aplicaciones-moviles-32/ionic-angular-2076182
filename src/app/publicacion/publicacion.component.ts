@@ -1,6 +1,4 @@
-import { R3BoundTarget } from '@angular/compiler';
-import { Component, OnInit, OnChanges } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,56 +8,48 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PublicacionComponent implements OnInit {
 
-  constructor(private ruta: ActivatedRoute) {}
+  constructor(private ruta: ActivatedRoute) { }
 
-   publicacion = this.ruta.snapshot.params['id'];
-   publicacionImprimir: any = {}
-   
-   ngOnInit(): void {
-    this.obtenerPublicacion(this.publicacion);
-    
+  ngOnInit(): void {
+    this.buscarPublicacion();
+  }
+
+  publicacion = this.ruta.snapshot.params['id'];
+
+  //BD
+  publicaciones = [{
+        "usuario": "@SrS",
+        "imagen": "../assets/imagenes/1.jpeg",
+        "caption": "holaa",
+        "comentario": "", 
+        "id": "01"
+    },
+    {
+        "usuario": "@SrPato",
+        "imagen": "../assets/imagenes/2.jpeg",
+        "caption": "miau",
+        "comentario": "", 
+        "id": "02"
+    },
+    {
+        "usuario": "@SrKevin",
+        "imagen": "../assets/imagenes/3.jpeg",
+        "caption": "miaux2",
+        "comentario": "", 
+        "id": "03"
     }
+];
 
-    //post = this.obtenerPublicacion(this.publicacion);
+  publicacionDetalle: any= {}
 
-  publicaciones = [
-    {
-      "id": "432dffds8", 
-      "imagen": "assets/1.jpeg",
-
-    }, 
-    {
-      "id": "432dffds8dlkfd", 
-      "imagen": "assets/2.jpeg",
-
-    }, 
-    {
-      "id": "3c", 
-      "imagen": "assets/3.jpeg",
-
-    }, 
-    {
-      "id": "2b", 
-      "imagen": "assets/4.jpeg",
-
-    }, 
-    {
-      "id": "1a", 
-      "imagen": "assets/5.jpeg",
-
-    }
-  ]
-
-  obtenerPublicacion(id: string) : any {
-    
-    for(let x= 0; x < this.publicaciones.length; x++) {
-      if(id == this.publicaciones[x].id) {
-        this.publicacionImprimir = this.publicaciones[x];
+  buscarPublicacion(): any {
+    for(let i = 0; i < this.publicaciones.length; i++) {
+      if(this.publicaciones[i].id == this.publicacion) {
+        this.publicacionDetalle = this.publicaciones[i];
       }
     }
-    console.log(this.publicacionImprimir);
-    return this.publicacionImprimir;
-  } 
+    return this.publicacionDetalle;
+  }
 
-  
+
 }

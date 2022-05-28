@@ -3,42 +3,54 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FeedComponent } from './feed/feed.component';
 import { IonicModule } from '@ionic/angular';
-import { PerfilComponent } from './perfil/perfil.component';
-import { PublicacionesComponent } from './publicaciones/publicaciones.component';
-
 import { TabsComponent } from './tabs/tabs.component';
-
-import { PublicacionFeedComponent } from './publicacion-feed/publicacion-feed.component';
-import { PublicacionComponent } from './publicacion/publicacion.component';
-
-
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { RoutesModule } from './routes.module';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+//Firebase
+import {AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
-import { HttpClientModule } from '@angular/common/http';
+
+//temporalmente aqui
+import { BioComponent } from './bio/bio.component';
+import { GaleriaComponent } from './galeria/galeria.component';
+import { FeedComponent } from './feed/feed.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { PublicacionComponent } from './publicacion/publicacion.component';
+import { HistoriasComponent } from './historias/historias.component';
+import { PublicarComponent } from './publicar/publicar.component';
+
+
+//Providers
+import { Camera } from '@awesome-cordova-plugins/camera/ngx';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     FeedComponent,
+    BioComponent, 
+    GaleriaComponent,
+    HistoriasComponent,
+    PublicacionComponent, 
     PerfilComponent,
-    TabsComponent,
-    PublicacionComponent,
-    PublicacionesComponent,
-    PublicacionFeedComponent
+    TabsComponent, 
+    PublicarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    RoutesModule,
     HttpClientModule,
-    IonicModule.forRoot(),
-    RoutesModule
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    IonicModule.forRoot(), 
+    ReactiveFormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent], 
-  exports: [RoutesModule]
+  providers: [
+   Camera
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
